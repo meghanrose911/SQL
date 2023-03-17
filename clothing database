@@ -1,0 +1,25 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, type TEXT, quantity INTEGER, size TEXT, price INTEGER);
+
+INSERT into clothing values(1, "shirt", 20, "small", 15);
+INSERT into clothing values(2, "pants", 30, "large", 10);
+INSERT into clothing values(3, "socks", 50, "one size", 5);
+INSERT into clothing values(4, "shoes", 10, "medium", 30);
+INSERT into clothing values(5, "skirts", 20, "small", 25);
+INSERT into clothing values(6, "leggings", 40, "large", 30);
+INSERT into clothing values(7, "crop top", 10, "medium", 25);
+INSERT into clothing values(8, "shorts", 20, "large", 20);
+INSERT into clothing values(9, "jacket", 40, "medium", 50);
+INSERT into clothing values(10, "joggers", 10, "small", 15);
+INSERT into clothing values(11, "hat", 15, "one size", 25);
+INSERT into clothing values(12, "bra", 10, "small", 30);
+INSERT into clothing values(13, "tee shirt", 30, "medium", 25);
+INSERT into clothing values(14, "denim", 10, "large", 40);
+INSERT into clothing values(15, "winter", 10, "small", 10);
+
+
+--display the clothing ordered by price
+SELECT * FROM clothing ORDER BY price;
+
+--what is the max quantity of one type of clothing?
+SELECT MAX(quantity) FROM clothing 
+
